@@ -593,6 +593,10 @@ video {
   width: 70vw;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .translate-y-\[100vh\] {
   --tw-translate-y: 100vh;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -806,13 +810,6 @@ video {
   display: border-box;
 }
 
-.profile-section {
-  background-color: white;
-  background-image: radial-gradient(circle, #00000020 1%, transparent 10%), radial-gradient(circle, #00000020 1%, transparent 10%);
-  background-size: 40px 40px;
-  background-position: 0 0, 40px 40px;
-}
-
 @keyframes background-pan {
   from {
     background-position: 0% center;
@@ -856,7 +853,7 @@ h1 > .magic > .magic-star {
   position: absolute;
   top: var(--star-top);
   width: var(--size);
-  fill: white;
+  fill: violet;
 }
 
 h1 > .magic > .magic-star > svg {

@@ -1,6 +1,5 @@
-const doc = document;
-const left = doc.getElementById('left-side');
-const right = doc.getElementById('right-side');
+const left = document.getElementById('left-side');
+const right = document.getElementById('right-side');
 
 const handleOnMove = (e) => {
     const p = e.clientX / window.innerWidth * 100;
@@ -11,9 +10,9 @@ document.onmousemove = e => handleOnMove(e);
 
 document.ontouchmove = e => handleOnMove(e.touches[0]);
 
-const menuOpen = doc.getElementById("menu");
-const menuClose = doc.getElementById("close");
-const overlay = doc.getElementById("mobileview");
+const menuOpen = document.getElementById("menu");
+const menuClose = document.getElementById("close");
+const overlay = document.getElementById("mobileview");
 
 menuOpen.addEventListener("click", () => {
 
