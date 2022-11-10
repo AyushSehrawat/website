@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Ayush Sehrawat</title>
+</head>
+
+<body>
+
+    <header class="flex justify-between items-center p-[15px_10%] bg-[#1B1A27] text-white">
+        <h2 class="text-4xl font-heading font-bold">Minidev</h2>
+        <nav>
+            <ul class="hidden md:visible md:flex list-none font-heading">
+                <li class="p-[0px_20px]"><a class="text-xl font-semibold" href="#">Projects</a></li>
+                <li class="p-[0px_20px]"><a class="text-xl font-semibold" href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="hidden md:inline text-lg p-[6px_25px] font-heading bg-gray-400 text-white border-none rounded-lg cursor-pointer font-semibold"
+            href="#">Contact</a>
+        <p id="menu"
+            class="md:hidden p-[6px_25px] font-heading  bg-gray-400 text-white border-none rounded-lg cursor-pointer font-semibold">
+            Menu
+        </p>
+    </header>
+    <div id="mobileview"
+        class="h-full w-0 fixed z-[3] left-0 top-0 bg-[#F84F39] overflow-x-hidden transition-all ease-in delay-300">
+        <a id="close" class="absolute top-[20px] right-[45] text-[60px] text-white cursor-pointer">&times;</a>
+        <div class="flex h-full flex-col items-center justify-center text-white font-heading">
+            <a class="font-semibold p-[15px] text-[36px] block" href="#">Projects</a>
+            <a class="font-semibold p-[15px] text-[36px] block" href="#">About</a>
+        </div>
+    </div>
+
+    <div id="left-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#1B1A27] z-[2]">
+        <h2 class="text-white text-[6vw] m-[0px_15vw] w-[70vw] font-heading font-bold">
+            Developer who likes to <span class="text-[#F84F39] font-cursive italic">code</span>
+        </h2>
+    </div>
+
+    <div id="right-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#F84F39]">
+        <h2 class="text-black text-[6vw] m-[0px_15vw] w-[70vw] font-heading font-bold">
+            Developer who likes to <span class="text-white font-cursive italic">code and code</span>
+        </h2>
+    </div>
+
+    <div id="profile-section"
+        class="translate-y-[100vh] grid place-content-center font-heading font-bold text-4xl py-10 bg-[#1B1A27] text-white lg:text-7xl md:text-5xl">
+        <h1 class="text-center">
+            Hi! I am
+            <span class="magic inline-block relative">
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                </span>
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                </span>
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                </span>
+                <span
+                    class="text-white font-cursive bg-clip-text text-transparent  bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 magic-text">Ayush
+                    Sehrawat</span>
+            </span>
+            .
+        </h1>
+        <h2 class="text-center py-4 font-heading text-xl md:text-2xl lg:text-3xl">
+            A backend developer polishing his skills in frontend too.
+        </h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
