@@ -88,13 +88,62 @@
 
     <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#1B1A27] py-4">
         <h2 class="font-heading text-4xl text-center font-bold">Skills</h2>
-        <h3 class="font-heading text-2xl text-center font-bold py-2">Languages</h3>
-        <div class="grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1 py-2">
-            <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-python text-4xl"></i></div>
-            <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-js text-4xl"></i></div>
-            <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-html5 text-4xl"></i></div>
-            <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-css3-alt text-4xl"></i></div>
+        <div class="py-4 grid grid-flow-col place-content-center gap-4 text-2xl font-heading font-semibold"
+            aria-multiselectable="false">
+            <div id="skills-tabs-1" class="underline-effect relative p-1 hover:cursor-pointer">
+                Languages
+            </div>
+            <div id="skills-tabs-2" class="underline-effect relative p-1 hover:cursor-pointer">
+                Tools
+            </div>
+            <div id="skills-tabs-3" class="underline-effect relative p-1 hover:cursor-pointer">
+                Frameworks
+            </div>
         </div>
+
+        <div id="languages-div" class="grid place-content-center">
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1 py-2">
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-python text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-js text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-html5 text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-css3-alt text-4xl"></i></div>
+            </div>
+        </div>
+        <div id="tools-div" class="hidden grid place-content-center">
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1 py-2">
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-github text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><img src="images/vscode-alt.png"></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_square.png" class="w-[100px]"></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-css3-alt text-4xl"></i></div>
+            </div>
+        </div>
+        <div id="frameworks-div" class="hidden grid place-content-center">
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1 py-2">
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-spotify text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-js text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-html5 text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-css3-alt text-4xl"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#1B1A27] py-4">
+        <h2 class="font-heading text-4xl text-center font-bold">Contact</h2>
+        <div class="grid place-content-center">
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1 py-2">
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-discord text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-reddit text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-youtube text-4xl"></i></div>
+                <div class="flex h-14 w-14 items-center justify-center rounded-md bg-gray-800 p-4"><i class="fa-brands fa-github text-4xl"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid place-content-center text-white translate-y-[100vh] bg-[#1B1A27] py-2">
+            <h2 class="font-heading text-2xl text-center font-thin">&copy; Copyright 2022, Minidev</h2>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

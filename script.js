@@ -45,3 +45,31 @@ for (const star of document.getElementsByClassName("magic-star")) {
         setInterval(() => animate(star), 1000);
     }, index++ * (interval / 3))
 }
+
+
+const langtab = document.getElementById("skills-tabs-1");
+const toolstab = document.getElementById("skills-tabs-2");
+const framestab = document.getElementById("skills-tabs-3");
+const langtabget = document.getElementById("languages-div");
+const toolstabget = document.getElementById("tools-div");
+const framestabget = document.getElementById("frameworks-div");
+
+langtab.addEventListener("click", () => {
+    langtabget.classList.remove("hidden");
+    toolstabget.classList.add("hidden");
+    framestabget.classList.add("hidden");
+});
+
+framestab.addEventListener("click", () => {
+    langtabget.classList.add("hidden");
+    toolstabget.classList.add("hidden");
+    framestabget.classList.remove("hidden");
+});
+
+toolstab.addEventListener("click", () => {
+    langtabget.classList.add("hidden");
+    toolstabget.classList.remove("hidden");
+    framestabget.classList.add("hidden");
+});
+
+

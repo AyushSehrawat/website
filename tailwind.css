@@ -70,3 +70,31 @@ h1 > .magic > .magic-text {
   animation: background-pan 3s linear infinite;
   background-size: 200%;
 }
+
+.underline-effect {
+  text-decoration: none;
+
+}
+
+.underline-effect {
+  background:
+    linear-gradient(
+      to right,
+      rgba(168, 85, 247),
+      rgba(168, 85, 247, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(236, 72, 153, 1),
+      rgba(236, 72, 153, 1),
+      rgba(236, 72, 153, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.underline-effect:hover {
+  background-size: 0 3px, 100% 3px;
+}
