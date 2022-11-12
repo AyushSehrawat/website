@@ -56,7 +56,15 @@ const framestabget = document.getElementById("frameworks-div");
 
 langtab.addEventListener("click", () => {
     langtabget.classList.remove("hidden");
+    langtabget.classList.add("grid");
     toolstabget.classList.add("hidden");
+    framestabget.classList.add("hidden");
+});
+
+toolstab.addEventListener("click", () => {
+    langtabget.classList.add("hidden");
+    toolstabget.classList.remove("hidden");
+    toolstabget.classList.add("grid");
     framestabget.classList.add("hidden");
 });
 
@@ -64,12 +72,34 @@ framestab.addEventListener("click", () => {
     langtabget.classList.add("hidden");
     toolstabget.classList.add("hidden");
     framestabget.classList.remove("hidden");
-});
-
-toolstab.addEventListener("click", () => {
-    langtabget.classList.add("hidden");
-    toolstabget.classList.remove("hidden");
-    framestabget.classList.add("hidden");
+    framestabget.classList.add("grid");
 });
 
 
+window.addEventListener('load', function () {
+    setTimeout(function () {console.log("Hi")}, 1000);
+    left.style.transition = "width 1s";
+    left.style.width = "57.5%";
+    setTimeout(function () {left.style.transition = "none"}, 1000);
+});
+
+const redirectdiscord = document.getElementById("social-discord");
+const redirectgithub = document.getElementById("social-github");
+const redirectreddit = document.getElementById("social-reddit");
+const redirectyoutube = document.getElementById("social-youtube");
+
+redirectdiscord.addEventListener("click", () => {
+    alert("Send me request on Mini#5183 :)")
+});
+
+redirectgithub.addEventListener("click", () => {
+    window.open("https://github.com/AyushSehrawat", "_blank");
+});
+
+redirectreddit.addEventListener("click", () => {
+    window.open("https://www.reddit.com/u/Mini_Py", "_blank");
+});
+
+redirectyoutube.addEventListener("click", () => {
+    window.open("https://www.youtube.com/@mini5183", "_blank");
+});
