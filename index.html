@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="flex justify-between items-center p-[15px_10%] bg-[#1B1A27] text-white">
+    <header class="flex justify-between items-center p-[15px_10%] bg-[#302130] text-white">
         <h2 class="text-4xl font-heading font-bold">Minidev</h2>
         <nav>
             <ul class="hidden md:visible md:flex list-none font-heading">
@@ -24,15 +24,15 @@
                 <li class="p-[0px_20px]"><a class="text-xl font-semibold" href="#">About</a></li>
             </ul>
         </nav>
-        <a class="hidden md:inline text-lg p-[6px_25px] font-heading bg-gray-400 text-white border-none rounded-lg cursor-pointer font-semibold"
+        <a class="hidden md:inline text-lg p-[6px_25px] font-heading bg-[#FFB95C] text-white border-none rounded-lg cursor-pointer font-semibold"
             href="#">Contact</a>
         <p id="menu"
-            class="md:hidden p-[6px_25px] font-heading  bg-gray-400 text-white border-none rounded-lg cursor-pointer font-semibold">
+            class="md:hidden p-[6px_25px] font-heading  bg-[#FFB95C] text-white border-none rounded-lg cursor-pointer font-semibold">
             Menu
         </p>
     </header>
     <div id="mobileview"
-        class="h-full w-0 fixed z-[3] left-0 top-0 bg-[#F84F39] overflow-x-hidden transition-all ease-in delay-300">
+        class="h-full w-0 fixed z-[3] left-0 top-0 bg-[#FA9E97] overflow-x-hidden transition-all ease-in delay-300">
         <a id="close" class="absolute top-[20px] right-[45] text-[60px] text-white cursor-pointer">&times;</a>
         <div class="flex h-full flex-col items-center justify-center text-white font-heading">
             <a class="font-semibold p-[15px] text-[36px] block" href="#">Projects</a>
@@ -40,20 +40,20 @@
         </div>
     </div>
 
-    <div id="left-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#1B1A27] z-[2]">
+    <div id="left-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#302130] z-[2]">
         <h2 class="text-white text-[6vw] m-[0px_15vw] w-[70vw] font-heading font-bold">
             Developer who likes to <span class="text-[#F84F39] font-cursive italic">code</span>
         </h2>
     </div>
 
-    <div id="right-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#F84F39]">
+    <div id="right-side" class="absolute h-[100vh] w-full grid place-items-center overflow-hidden bg-[#FA9E97]">
         <h2 class="text-black text-[6vw] m-[0px_15vw] w-[70vw] font-heading font-bold">
             Developer who likes to <span class="text-white font-cursive italic">code and code</span>
         </h2>
     </div>
 
     <div id="profile-section"
-        class="translate-y-[100vh] grid place-content-center font-heading font-bold text-4xl py-10 bg-[#1B1A27] text-white lg:text-7xl md:text-5xl">
+        class="translate-y-[100vh] grid place-content-center font-heading font-bold text-4xl py-10 bg-[#302130] text-white lg:text-7xl md:text-5xl">
         <h1 class="text-center">
             Hi! I am
             <span class="magic inline-block relative">
@@ -86,7 +86,7 @@
         </h2>
     </div>
 
-    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#1B1A27] py-4">
+    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#302130] py-4">
         <h2 class="font-cursive text-4xl text-center font-bold">Skills</h2>
         <div class="py-4 grid grid-flow-col place-content-center gap-4 text-2xl font-heading font-semibold"
             aria-multiselectable="false">
@@ -101,21 +101,22 @@
             </div>
         </div>
 
+
         <div id="languages-div" class="grid place-content-center">
             <div class="grid gap-2 grid-cols-2 grid-rows-2 py-2 lg:grid-cols-4 lg:grid-rows-1">
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349]">
                     <i class="fa-brands fa-python text-4xl"></i>
                     <p class="grid items-center font-heading font-semibold text-md ml-4">Python</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349]">
                     <i class="fa-brands fa-js text-4xl"></i>
                     <p class="grid items-center font-heading font-semibold text-md ml-4">Javascript</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349]">
                     <i class="fa-brands fa-html5 text-4xl ml-0"></i>
                     <p class="grid items-center font-heading font-semibold text-md ml-4">HTML</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349]">
                     <i class="fa-brands fa-css3 text-4xl"></i>
                     <p class="grid items-center font-heading font-semibold text-md ml-4">CSS</p>
                 </div>
@@ -123,73 +124,92 @@
         </div>
         <div id="tools-div" class="hidden place-content-center">
             <div class="grid gap-2 grid-cols-2 grid-rows-2 py-2 lg:grid-cols-4 lg:grid-rows-1">
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">Git</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">VSCode</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">Pycharm</p>
                 </div>
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">Codespace</p>
                 </div>
             </div>
         </div>
         <div id="frameworks-div" class="hidden place-content-center">
             <div class="grid gap-2 grid-cols-3 grid-rows-2 py-2 lg:grid-cols-6 lg:grid-rows-1">
-                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">FastAPI</p>
                 </div>
-                <div class="grid gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">Flask</p>
                 </div>
-                <div class="grid gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">Django</p>
                 </div>
-                <div class="grid gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">TailwindCSS</p>
                 </div>
-                <div class="grid gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">discord.py</p>
                 </div>
-                <div class="grid gap-1 p-4 rounded-md bg-gray-800 place-content-center">
+                <div class="grid gap-1 p-4 rounded-md bg-[#333349] place-content-center">
                     <p class="grid items-center font-heading font-semibold text-md">mongoDB</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#1B1A27] py-4">
+    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#302130] py-4">
         <h2 class="font-cursive text-4xl text-center font-bold">Contact</h2>
         <div class=" grid gap-2 grid-cols-1 grid-rows-4 py-2 lg:grid-cols-4 lg:grid-rows-1">
 
-            <div id="social-discord" class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 cursor-pointer">
+            <div id="social-discord" class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] cursor-pointer">
                 <i class="fa-brands fa-discord text-4xl"></i>
                 <p class="grid items-center font-heading font-semibold text-md">Mini#5183</p>
             </div>
-            <div id="social-github" class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 cursor-pointer">
+            <div id="social-github" class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] cursor-pointer">
                 <i class="fa-brands fa-github text-4xl"></i>
                 <p class="grid items-center font-heading font-semibold text-md">AyushSehrawat</p>
             </div>
-            <div id="social-reddit" class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 cursor-pointer">
+            <div id="social-reddit" class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] cursor-pointer">
                 <i class="fa-brands fa-reddit text-4xl ml-0"></i>
                 <p class="grid items-center font-heading font-semibold text-md">Mini_py</p>
             </div>
-            <div id="social-youtube" class="grid grid-flow-col gap-1 p-4 rounded-md bg-gray-800 cursor-pointer">
+            <div id="social-youtube" class="grid grid-flow-col gap-1 p-4 rounded-md bg-[#333349] cursor-pointer">
                 <i class="fa-brands fa-youtube text-4xl"></i>
                 <p class="grid items-center font-heading font-semibold text-md">Minimal Knowledge</p>
             </div>
         </div>
     </div>
 
-    <div class="grid place-content-center grid-flow-row text-white translate-y-[100vh] bg-[#1B1A27] py-4">
-        <h2 class="font-cursive text-4xl text-center font-bold">Projects Soon&#8482;</h2>
-    </div> 
+    <div class="grid grid-flow-row  place-content-center text-white translate-y-[100vh] bg-[#302130] py-4">
+        <h2 class="font-cursive text-4xl text-center font-bold">Projects</h2>
+        <div class="my-4 grid place-content-center grid-flow-col grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-2">
+            <div class="bg-[#333349] text-white p-4 rounded-lg font-heading grid grid-flow-row font-semibold max-w-sm">
+                <p class="text-center text-xl">minidev.me</p>
+                <p class="text-center text-md">Yeah, this website itself is a project made using html, css, js and tailwindcss.</p>
+                <button class="p-1 my-1 rounded-lg bg-[#FFB95C]"><i class="fa-solid fa-code"></i> Source code</button>
+            </div>
+            <div class="bg-[#333349] text-white p-4 rounded-lg font-heading grid grid-flow-row font-semibold max-w-sm">
+                <p class="text-center text-xl">ecobot</p>
+                <p class="text-center text-md">An economy bot made using discord.py in python</p>
+                <button class="p-1 my-1 rounded-lg bg-[#FFB95C]"><i class="fa-solid fa-code"></i> Source code</button>
+            </div>
+            <div class="bg-[#333349] text-white p-4 rounded-lg font-heading grid grid-flow-row font-semibold max-w-sm">
+                <p class="text-center text-xl">basic.deta.dev</p>
+                <p class="text-center text-md">Community based docs for deta.sh made using FastAPI &#38; mkdocs-material in Python</p>
+                <button class="p-1 my-1 rounded-lg bg-[#FFB95C]"><i class="fa-solid fa-code"></i> Source code</button>
+            </div>
+        </div>
+        <p class="font-heading text-lg font-semibold text-center p-1 my-1">And more exciting projects in work!</p>
+    </div>
+
 
     <footer>
-        <div class="grid place-content-center text-white translate-y-[100vh] bg-[#1B1A27] py-2">
+        <div class="grid place-content-center text-white translate-y-[100vh] bg-[#302130] py-2">
             <h2 class="font-cursive text-xl text-center font-thin">&copy; Copyright 2022, Minidev</h2>
         </div>
     </footer>
