@@ -1,14 +1,15 @@
 const left = document.getElementById('left-side');
-const right = document.getElementById('right-side');
+const parentSlider = document.getElementById("parentSlider");
 
-const handleOnMove = (e) => {
+parentSlider.addEventListener("mousemove", e => {
     const p = e.clientX / window.innerWidth * 100;
     left.style.width = `${p}%`;
-};
+});
 
-document.onmousemove = e => handleOnMove(e);
-
-document.ontouchmove = e => handleOnMove(e.touches[0]);
+parentSlider.addEventListener("touchmove", e => {
+    const p = e.touches[0].clientX / window.innerWidth * 100;
+    left.style.width = `${p}%`;
+});
 
 const menuOpen = document.getElementById("menu");
 const menuClose = document.getElementById("close");

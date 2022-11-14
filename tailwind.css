@@ -46,14 +46,14 @@ h1 > .magic {
 h1 > .magic > .magic-star {
   --size: clamp(20px, 1.5vw, 30px);
   
-  animation: scale 700ms ease forwards;
+  animation: scale 1000ms ease forwards;
   display: block;
   height: var(--size);
   left: var(--star-left);
   position: absolute;
   top: var(--star-top);
   width: var(--size);
-  fill: violet;
+  fill: palevioletred;
 }
 
 h1 > .magic > .magic-star > svg {
@@ -80,8 +80,8 @@ h1 > .magic > .magic-text {
   background:
     linear-gradient(
       to right,
-      rgba(168, 85, 247),
-      rgba(168, 85, 247, 1)
+      rgb(230,119,131),
+      rgb(230,119,131)
     ),
     linear-gradient(
       to right,
